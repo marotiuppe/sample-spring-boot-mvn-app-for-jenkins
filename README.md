@@ -9,8 +9,9 @@ This is a simple Spring Boot "Hello World" application created for demonstration
 - **Maven**: Standard build tool for dependency management and lifecycle.
 
 ## Requirements
-- **JDK 17** or higher (required for Spring Boot 3)
+- **JDK 1.8** or higher (configured for Java 1.8 compatibility)
 - **Apache Maven 3.6** or higher
+- **Tomcat 8 or 9** running on Java 1.8
 
 ## Getting Started
 
