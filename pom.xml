@@ -15,7 +15,7 @@
 	<name>sample-spring-boot-mvn-app-for-jenkins</name>
 	<description>Simple Hello World Spring Boot Application</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
