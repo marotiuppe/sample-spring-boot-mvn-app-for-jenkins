@@ -15,7 +15,7 @@ This is a simple Spring Boot "Hello World" application created for demonstration
 ## Getting Started
 
 ### Build the project
-To compile and build the JAR file, run:
+To compile and build the WAR file, run:
 ```bash
 mvn clean package
 ```
@@ -27,11 +27,13 @@ mvn test
 ```
 
 ### Run the application
-After building, you can run the JAR file:
-```bash
-java -jar target/sample-spring-boot-mvn-app-for-jenkins-0.0.1-SNAPSHOT.jar
-```
-The application will start at `http://localhost:8080`.
+Since this is now a WAR project, you can:
+1. **Deploy to Tomcat**: Copy the generated `target/sample-spring-boot-mvn-app-for-jenkins-0.0.1.war` to the `webapps` folder of your Tomcat installation.
+2. **Run with Embedded Tomcat**: You can still run it as a regular Spring Boot app:
+   ```bash
+   java -jar target/sample-spring-boot-mvn-app-for-jenkins-0.0.1.war
+   ```
+The application will start at `http://localhost:8080/sample-spring-boot-mvn-app-for-jenkins-0.0.1` (or root context depending on Tomcat configuration).
 
 ## API Endpoints
 - `GET /hello`: Returns a "Hello World!" message.
