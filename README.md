@@ -28,12 +28,12 @@ mvn test
 
 ### Run the application
 Since this is now a WAR project, you can:
-1. **Deploy to Tomcat**: Copy the generated `target/sample-spring-boot-mvn-app-for-jenkins-0.0.1.war` to the `webapps` folder of your Tomcat installation.
+1. **Deploy to Tomcat**: Copy the generated `target/sample-app.war` to the `webapps` folder of your Tomcat installation.
 2. **Run with Embedded Tomcat**: You can still run it as a regular Spring Boot app:
    ```bash
-   java -jar target/sample-spring-boot-mvn-app-for-jenkins-0.0.1.war
+   java -jar target/sample-app.war
    ```
-The application will start at `http://localhost:8080/sample-spring-boot-mvn-app-for-jenkins-0.0.1` (or root context depending on Tomcat configuration).
+The application will start at `http://localhost:2020/sample-app/hello`.
 
 ## API Endpoints
 - `GET /hello`: Returns a "Hello World!" message.
