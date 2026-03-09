@@ -3,7 +3,7 @@
 This is a simple Spring Boot "Hello World" application created for demonstration purposes, specifically for integration with Jenkins CI/CD pipelines.
 
 ## Features
-- **Spring Boot 3.2.3**: Modern Java framework.
+- **Spring Boot 2.7.18**: Compatible with legacy Tomcat 9.
 - **REST Endpoint**: A simple `/hello` endpoint that returns "Hello World!".
 - **JUnit 5 & AssertJ**: Automated testing using Spring Boot's testing starter.
 - **Maven**: Standard build tool for dependency management and lifecycle.
